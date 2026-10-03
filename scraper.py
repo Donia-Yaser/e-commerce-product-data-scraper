@@ -32,9 +32,10 @@ def collect_data(html):
 
         item = {
         'item-name': item_name.text() if item_name is not None else None,
-        'item-url': item_url,
         'special-price': special_price.text() if special_price is not None else None,
-        'old-price': old_price.text() if old_price is not None else None
+        'old-price': old_price.text() if old_price is not None else None,
+        'item-url': item_url
+        
         }
 
         items.append(item)
